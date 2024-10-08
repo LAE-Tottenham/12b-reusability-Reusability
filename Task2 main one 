@@ -3,10 +3,6 @@ from pyfiglet import Figlet
 import os, time
 import pyfiglet
 
-# Help! I'm trying to make this cool bot but my code is too messy :( Please help me organise it into reusable components.
-
-# Define your reusable functions here:
-# Make sure each function only does ONE thing!!!!!!!!!!!
 def weird_weather_bot():
     f = Figlet(font="slant")
     print(f.renderText("HEY!"))
@@ -96,21 +92,3 @@ def run():
     greet()
 
 run()
-
-
-# After you have written the reusable functions, answer the following:
-# Questions:
-# 1. What are the preconditions for your code not to break?
-    #correct data tpe is entered
-# 2. Validate the user's input based on your preconditions.
-# 3. Why was it useful to use reusable components in this case? Please mention at least 2 reasons and don't forget to contextualise.
-    #So when make changes, we only neeed to change the code once, for exampl if i want to chnage questions. 
-    #Also it shows up more neatl instead of all code in a block . 
-# Further Tasks:
-# 1. Put your functions in seperate appropriate files and import them in.
-# 2. Make sure all of your functions (except the main one) only do ONE thing or process.
-# 3. Add your own twist to the code.
-
-# Extension:
-# Add the following apis as reusable components and use them in your code:
-# https://www.exchangerate-api.com/docs/overview

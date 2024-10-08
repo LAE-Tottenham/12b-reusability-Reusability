@@ -1,0 +1,31 @@
+import math
+
+def weird_calculation(opp1,adj1,opp2,abj2):
+    hyp1 = math.sqrt(opp1**2 + adj1**2)
+    hyp2 = math.sqrt(opp2**2 + adj2**2)
+    opp3 = hyp1
+    adj3 = hyp2
+    hyp3 = math.sqrt(opp3**2 + adj3**2)
+    return hyp3
+
+def SOH_find_angle(opp,hyp):
+    sine_A = opp / hyp
+    A_rad = math.asin(sine_A)
+    A_deg = math.degrees(A_rad)
+    
+    return A_deg
+
+def CAH_find_angle(adj,hyp):
+    cah_A = adj / hyp
+    A_rad = math.acos(cah_A)
+    A_deg = math.degrees(A_rad)
+    
+    return A_deg
+
+def TOA_find_angle(opp,adj):
+    tan_A = opp / adj
+    A_rad = math.atan(tan_A)
+    A_deg = math.degrees(A_rad)
+    
+    return A_deg
+
